@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onkeydown="handleKeyDown(event)">
+    <div class="container">
+        <h1>Word Guessing Game</h1>
+        <p>Guess the word:Fruit</p>
+        <input style="border: 10px solid #d6d6d6; width: 44%;" type="text" id="guessInput" onchange="checkGuess()" onkeydown="handleKeyDown(event)" >
+        <p id="message"></p>
+        <p id="hint"></p>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
